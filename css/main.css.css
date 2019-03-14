@@ -1,0 +1,511 @@
+@font-face {
+    font-family: 'Museo';
+    src: url(../assets/fonts/museo/museo-300-webfont.woff) format("woff");
+}
+
+body {
+    font-family: "Museo", sans-serif;
+}
+
+
+*{
+	border: red solid 0px;
+  }
+  
+  body{
+	margin: 0px;
+	background: url('https://github.com/tyreil/web_1_project_2/blob/master/assets/textures/fabric_plaid.png?raw=true');
+  }
+  
+  nav{
+	display: flex;
+	margin: 15px 40px 0px 50px;
+	justify-content: space-between;
+  }
+  
+  @media only screen and (min-width: 2010px) {
+	nav {
+	  margin: 15px 60px 0px 70px;
+	}
+  }
+  
+  #navLeft{
+	display: flex;
+	margin: 10px;
+	align-items: center;
+	width: 50%;
+  }
+  
+  #navLeft img{
+	max-height: 60px;
+	height: auto;
+	width: auto;
+	margin-right: 20px;
+  }
+  
+  #navLeft a{
+	text-transform: uppercase;
+	margin-left: 15px;
+	margin-right: 15px;
+	align-self: center;
+	text-decoration: none;
+	color: rgba(80,80,80,1);
+	font-family: sans-serif;
+	font-size: 16px;
+  }
+  
+  #navRight{
+	margin: 10px;
+	width: 170px;
+	display: flex;
+	justify-content: flex-end;
+	flex-flow: row wrap;
+  }
+  
+  #navRight img{
+	margin: 0px 0px 10px 5px;
+	height: 40px;
+	width: 40px;
+  }
+  
+  #navRight a{
+	margin-right: 10px;
+	align-self: flex-end;
+	text-decoration: none;
+	color: rgba(80,80,80,1);
+	font-family: sans-serif;
+	font-size: 20px;
+  }
+  
+  #navRight a:hover, #navLeft a:hover {
+	color: purple;
+  }
+  
+  #noColor{
+	color: rgba(80,80,80,1);
+  }
+  
+  .carousel{
+	postition: relative;
+	background: white;
+	height: 50vh;
+	width: 95%;
+	margin: 10px auto 0 auto;
+	display: flex;
+	flex-flow: column nowrap;
+  }
+  
+  .carousel div:nth-child(1) {
+	display: flex;
+	margin: 10px 10px 10px 10px;
+	height: 100%;
+	z-index: 0;
+	background: url('https://kids.nationalgeographic.com/content/dam/kids/photos/articles/Other%20Explore%20Photos/R-Z/Wacky%20Weekend/Wild%20Cats/ww-wild-cats-tiger.adapt.945.1.jpg');
+	background-size: cover;
+	background-position: center;
+	flex-flow: column nowrap;
+	justify-content: flex-end;
+  }
+  
+  .carousel div div {
+	display: flex;
+	height: 70px;
+	background: rgba(80,80,80,.7);
+	z-index: 1;
+	justify-content: flex-end;
+	align-items: center;
+  }
+  
+  .carousel div img:nth-child(1) {
+	position: absolute;
+	left: 1.9%;
+	top: 31%;
+	height: 70px;
+  }
+  
+  .carousel div img:nth-child(2) {
+	position: absolute;
+	right: 1.9%;
+	top: 31%;
+	height: 70px;
+  }
+  
+  h1{
+	text-decoration: none;
+	color: white;
+	font-family: sans-serif;
+	font-size: 36px;
+	font-weight: 100;
+  }
+  
+  h2{
+	text-decoration: none;
+	color: white;
+	font-family: sans-serif;
+	font-size: 22px;
+	font-weight: 100;
+  }
+  
+  #h2space {
+	margin-right: 15px;
+  }
+  
+  #middlePHolder{
+	display: flex;
+	height: 50px;
+	margin: 3rem 50px 2.95rem 50px;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  #gapPhrase{
+	text-align: center;
+	text-decoration: none;
+	color: rgba(80,80,80,1);
+	font-family: sans-serif;
+	font-size: 24px;
+	font-weight: 700;
+  }
+  
+  .gallery{
+	margin: 0 auto 0 auto;
+	width: 93.5%;
+	background: none;
+	display: flex;
+	flex-flow: row wrap;
+	align-content: flex-start;
+	justify-content: center;
+	align-items: flex-start;
+  }
+  
+  .gallery div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 5px 5px;
+	height: 200px;
+	width: 24%;
+	background: rgba(80,80,80,1);
+  }
+  
+  .gallery div h1{
+	text-align: center;
+	font-size: 30px;
+	font-weight: 100;
+  }
+  
+  #galleryButton{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 15px 0px;
+	width: 18em;
+	height: 45px;
+	background: url('https://github.com/tyreil/web_1_project_2/blob/master/assets/textures/az_subtle.png?raw=true');
+	background-color: rgba(100,100,80,.5);
+	background-blend-mode: multiply;
+  }
+  
+  #galleryButton a{
+	color: white;
+	font-family: sans-serif;
+	font-size: 22px;
+	font-weight: 100;
+	text-decoration: none;
+  }
+  
+  #galleryButton a:hover {
+	color: purple;
+  }
+  
+  footer{
+	margin: 20px auto 10px auto;
+	width: 98%;
+	background: url('https://github.com/tyreil/web_1_project_2/blob/master/assets/textures/az_subtle.png?raw=true');
+	background-color: rgba(100,100,80,.5);
+	background-blend-mode: multiply;
+  }
+  
+  #tweet{
+	display: flex;
+	width: 100%;
+	height: 90px;
+	box-shadow: 0px 8px 10px rgba(60,60,60,1);
+	background: rgba(80,80,80,1);
+	justify-content: center;
+	align-items: center;
+  }
+  
+  #tweet img{
+	height: 40%;
+	margin: 0px 8px 0px 20px;
+  }
+  
+  #tweet div{
+	margin: 0px 20px 0px 8px;
+  }
+  
+  #tweet p span:nth-child(1) {
+	color: white;
+	font-family: sans-serif;
+	font-size: 22px;
+	font-weight: 100;
+  }
+  
+  #tweet p span:nth-child(2) {
+	color: white;
+	font-family: sans-serif;
+	font-size: 17px;
+	font-weight: 500;
+  }
+  
+  #footerColumns{
+	height: 250px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  
+  
+  #footerLeft {
+	display: flex;
+	flex-flow: column nowrap;
+	margin: 10px 0px 10px 20px;
+	width: 33%;
+  }
+  
+  #footerLeft img {
+	max-height: 50px;
+	height: auto;
+	width: auto;
+	margin-left: 10px;
+	margin-right: 13px;
+  }
+  
+  #footerLeft a {
+	text-transform: uppercase;
+	margin-left: 10px;
+	margin-right: 10px;
+	align-self: center;
+	text-decoration: none;
+	color: rgba(80,80,80,1);
+	font-family: sans-serif;
+	font-size: 14px;
+  }
+  
+  .footerGrey{
+	margin: 10px 0px 3px 3px;
+	text-transform: uppercase;
+	font-family: sans-serif;
+	color: rgba(70,70,70,1);
+	font-size: 18px;
+  }
+  
+  .footerWhite{
+	margin: 0px 0px 10px 3px;
+	font-family: sans-serif;
+	color: white;
+	line-height: 28px;
+  }
+  
+  .searchBar{
+	margin: 0px 1px;
+	display: flex;
+	background: white;
+	width: 90%;
+	height: 30px;
+	align-items: center;
+  }
+  
+  .searchBar p{
+	margin: 8px;
+	color: rgba(80,80,80,1);
+	font-family: sans-serif;
+	font-size: 16px;
+  }
+  
+  #footerMiddle{
+	margin: 10px 0px 10px 20px;
+	width: 33%;
+  }
+  
+  #footerColumns a {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: rgba(80,80,80,1);
+	font-family: sans-serif;
+  }
+  
+  #footerColumns a:hover {
+	color: purple;
+  }
+  
+  #footerRight{
+	margin: 10px;
+	width: 280px;
+  }
+  
+  #footerRight a {
+	margin-left: 30px;
+  }
+  
+  #navGallery div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 5px 5px;
+	height: 50px;
+	width: 50px;
+	background: rgba(80,80,80,1);
+  }
+  
+  @media only screen and (max-width: 760px) {
+	
+	#navLeft img{
+	  max-height: 50px;
+	}
+  
+	#navLeft a{
+	  font-size: 14px;
+	  margin-left: 10px;
+	  margin-right: 10px;
+	}
+  
+	#navRight{
+	  width: 130px;
+	}
+  
+	#navRight img{
+	  margin: 0px 0px 5px 2px;
+	  height: 25px;
+	  width: 25px;
+	}
+  
+	#navRight a{
+	  font-size: 14px;
+	}
+	
+	.carousel div div {
+	  height: 40px;
+	}
+	
+	.gallery div h1{
+	font-size: 24px;
+	}
+	
+	h2{
+	font-size: 16px;
+	}
+	
+	#gapPhrase{
+	  font-size: 18px;
+	  margin: 2rem 50px 1.95rem 50px;
+	}
+	
+	#tweet p span:nth-child(1) {
+	  font-size: 16px;
+	  font-weight: 100;
+	}
+  
+	#tweet p span:nth-child(2) {
+	  font-size: 12px;
+	  font-weight: 500;
+	}
+	
+  }
+  
+  @media only screen and (max-width: 960px) {
+	
+	#footerMiddle p{
+	font-size: 14px;
+	  line-height: 20px;
+	}
+	
+	#footerMiddle a{
+	  font-size: 10px;
+	  line-height: 12px;
+	}
+	
+  }
+
+
+
+
+
+
+  
+
+#student-feature {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr) 2fr;
+	grid-template-rows: repeat(3, 1fr); 
+	grid-gap: 10px;
+}
+
+img {
+	width: 100%;
+}
+
+ #focus {
+	background: url('https://images.unsplash.com/photo-1494256997604-768d1f608cac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=801&q=80');
+	background-size: cover;
+	background-position: center;
+	grid-column-start: 1 ;
+	grid-column-end: 4;
+	grid-row-start: 1; 
+	grid-row-end: 3;
+	border: 1px solid red;
+}
+
+
+
+#position-one {
+	background: url('https://images.unsplash.com/photo-1415369629372-26f2fe60c467?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80');
+	background-position: center;
+	background-size: cover;
+	grid-column-start: 1 ;
+	grid-column-end: 2;
+	grid-row-start: 3; 
+	grid-row-end: 4;
+}
+
+#position-two {
+	background: url('https://images.unsplash.com/photo-1415369629372-26f2fe60c467?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80');
+	background-position: center;
+	background-size: cover;
+	grid-column-start: 2 ;
+	grid-column-end: 3;
+	grid-row-start: 3; 
+	grid-row-end: 4;
+}
+
+#position-three {
+	background: url('https://images.unsplash.com/photo-1415369629372-26f2fe60c467?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80');
+	background-position: center;
+	background-size: cover;
+	grid-column-start: 3 ;
+	grid-column-end: 4;
+	grid-row-start: 3; 
+	grid-row-end: 4;
+}
+
+#bio {
+	background: red;
+	grid-column-start: 4 ;
+	grid-column-end: 5;
+	grid-row-start: 1; 
+	grid-row-end: 2;
+}
+
+#project-detail {
+	background: blue;
+	grid-column-start: 4 ;
+	grid-column-end: 5;
+	grid-row-start: 2; 
+	grid-row-end: 4;
+}
+
+
+
