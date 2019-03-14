@@ -9,7 +9,7 @@ body {
 
 
 *{
-	border: red solid 0px;
+
   }
   
   body{
@@ -288,6 +288,7 @@ body {
 	text-transform: uppercase;
 	margin-left: 10px;
 	margin-right: 10px;
+	margin-bottom: 0px;
 	align-self: center;
 	text-decoration: none;
 	color: rgba(80,80,80,1);
@@ -327,7 +328,7 @@ body {
   }
   
   #footerMiddle{
-	margin: 10px 0px 10px 20px;
+	margin: 10px 0px 0px 20px;
 	width: 33%;
   }
   
@@ -343,12 +344,12 @@ body {
   }
   
   #footerRight{
-	margin: 10px;
+	margin: 10px 10px 0px 10px;
 	width: 280px;
   }
   
   #footerRight a {
-	margin-left: 30px;
+	margin: 30px;
   }
   
   #navGallery div{
@@ -430,6 +431,24 @@ body {
 	
   }
 
+
+	#secondPLink{
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		height: 40px;
+	}
+
+	#secondPLink a{
+		text-decoration: none;
+		color: purple;
+		font-weight: 900;
+		font-size: 24px;
+	}
+
+	#secondPLink a:hover {
+		color: black;
+	}
 
 
 
